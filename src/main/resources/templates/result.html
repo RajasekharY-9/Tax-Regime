@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Tax Calculation Result</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<div class="result-container">
+    <h1>Tax Calculation Result</h1>
+
+    <p><strong>Salary Income:</strong> ₹<span th:text="${salary}"></span></p>
+    <p><strong>Exemption - Standard Deduction:</strong> ₹<span th:text="${standardDeduction}"></span></p>
+    <p><strong>Taxable Income:</strong> ₹<span th:text="${taxableIncome}"></span></p>
+    <p><strong>Tax Paid for This Year:</strong> ₹<span th:text="${tax}"></span></p>
+    <p><strong>Approx. Monthly Take-Home Salary:</strong> ₹<span th:text="${monthlyTakeHome}"></span></p>
+
+    <a href="/">Go Back</a>
+</div>
+</body>
+</html>
